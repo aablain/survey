@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+    <script src="js/jquery-3.1.1.js" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+    <title>Survey</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Survey Says</h1>
+      <div id="blanks">
+        <form>
+          <div class="form-group">
+            <label for="user-name">Write your name</label>
+            <input id="user-name" class="form-control" type="text">
+          </div>
+
+          <div>
+            <h2>What's your favorite food?</h2>
+            <select class="form-control" id="food">
+              <option>Pizza</option>
+              <option>Sushi</option>
+              <option>Hamburgers</option>
+              <option>Sub sandwich</option>
+            </select>
+          </div>
+
+          <div>
+            <h2>What's your favorite kind of music?</h2>
+            <div class="radio">
+              <label>
+                <input type="radio" name="music" value="rock" checked>
+                Rock
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="music" value="jazz">
+                Jazz
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="music" value="classical">
+                Classical
+              </label>
+            </div>
+          </div>
+
+          <div>
+            <h2>When were you born?</h2>
+            <div class="form-group">
+              <label for="born">Date of birth:</label>
+              <input id="born" class="form-control" type="date">
+            </div>
+          </div>
+
+          <div>
+            <h2>What's your favorite color?</h2>
+            <div class="form-group">
+              <label for="color">What is your favorite color?</label>
+              <input id="color" class="form-control" type="color">
+            </div>
+          </div>
+
+          <div>
+            <button type="submit" class="btn">Submit here</button>
+          </div>
+
+        </div>
+        <div id="submitted">
+          <h2>You Said:</h2>
+          <h3>Your name: <span class="user-name"></span></h3>
+          <h3>Your favorite food: <span class="food"></span></h3>
+          <h3>Your favorite Music: <span class="music"></span></h3>
+          <h3>You were born: <span class="born"></span></h3>
+          <h3>Favorite Color: <span class="color"></span></h3>
+        </div>
+        </form>
+      </div>
+
+
+  </body>
+</html>
